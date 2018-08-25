@@ -23,8 +23,6 @@ import java.nio.CharBuffer;
 public class WithdrawMoneyByImplements implements Runnable {
 	// 银行总存款
 	static int total = 5000;
-	// 共享锁对象
-	static Object o = new Object();
 
 	/**
 	 * 
@@ -32,7 +30,7 @@ public class WithdrawMoneyByImplements implements Runnable {
 	 */
 	public void withdrawMoney() {
 		while (true) {
-			synchronized (o) {
+			synchronized (this.getClass()) {
 				if (total > 0) {
 					System.out.println(Thread.currentThread().getName() + "取出了1000块， 剩余" + (total - 1000) + "元");
 					total -= 1000;

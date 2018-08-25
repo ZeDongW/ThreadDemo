@@ -21,9 +21,6 @@ public class SaleTicketsByExtends extends Thread {
 	// 共享静态变量，票数
 	static int num = 50;
 	
-	//创建共享锁
-	static Object o = new Object();
-	
 	/**
 	 *  创建一个新的实例 SaleTicketsByExtends.
 	 *
@@ -39,7 +36,7 @@ public class SaleTicketsByExtends extends Thread {
 	 */
 	public void saleTickets() {
 		while (true) {
-			synchronized (o) {
+			synchronized (this.getClass()) {
 				if (num > 0) {
 					System.out.println(Thread.currentThread().getName() + "卖出了第" + num + "张票");
 					num--;

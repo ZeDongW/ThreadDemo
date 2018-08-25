@@ -22,16 +22,13 @@ public class SaleTicketsByImplements implements Runnable {
 	// 共享静态变量，票数
 	static int num = 50;
 
-	// 创建共享锁
-	static Object o = new Object();
-
 	/**
 	 * 
 	 * @Title: saleTickets @Description: 卖票程序 @throws
 	 */
 	public void saleTickets() {
 		while (true) {
-			synchronized (o) {
+			synchronized (this.getClass()) {
 				if (num > 0) {
 					System.out.println(Thread.currentThread().getName() + "卖出了第" + num + "张票");
 					num--;
