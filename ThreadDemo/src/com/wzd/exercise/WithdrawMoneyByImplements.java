@@ -22,7 +22,7 @@ import java.nio.CharBuffer;
 
 public class WithdrawMoneyByImplements implements Runnable {
 	// 银行总存款
-	static int total = 5000;
+	int total = 5000;
 
 	/**
 	 * 

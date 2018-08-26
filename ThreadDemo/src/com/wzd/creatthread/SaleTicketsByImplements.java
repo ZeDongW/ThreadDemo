@@ -19,8 +19,9 @@ package com.wzd.creatthread;
 
 public class SaleTicketsByImplements implements Runnable {
 
-	// 共享静态变量，票数
-	static int num = 50;
+	//Runnable 是同一个对象不需要将票数设为静态
+	// 票数
+	int num = 50;
 
 	/**
 	 * 
