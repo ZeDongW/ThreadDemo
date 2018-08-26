@@ -46,7 +46,6 @@ public class Consumer implements Runnable {
 					p.notifyAll();
 				} else {
 					try {
-						Thread.sleep(100);
 						p.wait();
 					} catch (InterruptedException e) {
 						e.printStackTrace();

@@ -49,13 +49,12 @@ public class Producer implements Runnable {
 						p.setName("香蕉");
 						p.setPrice(2.0);
 					}
-					System.out.println(Thread.currentThread().getName() + "生产了" + p);
+					System.out.println(Thread.currentThread().getName() + "生产了：" + p);
 					i++;
 					p.setFalg(true);
 					p.notifyAll();
 				} else {
 					try {
-						Thread.sleep(100);
 						p.wait();
 					} catch (InterruptedException e) {
 						e.printStackTrace();
