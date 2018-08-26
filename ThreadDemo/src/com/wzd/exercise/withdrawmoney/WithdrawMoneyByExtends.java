@@ -8,7 +8,7 @@
  * @version V1.0  
  */
 
-package com.wzd.exercise;
+package com.wzd.exercise.withdrawmoney;
 
 /**
  * @ClassName: WithdrawMoneyByExtends

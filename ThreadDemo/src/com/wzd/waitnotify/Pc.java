@@ -24,12 +24,12 @@ public class Pc {
 		Producer pro = new Producer(p);
 		Consumer con = new Consumer(p);
 		Thread t1 = new Thread(pro, "生产者1");
-//		Thread t2 = new Thread(pro, "生产者2");
+		Thread t2 = new Thread(pro, "生产者2");
 		Thread t3 = new Thread(con, "消费者1");
-//		Thread t4 = new Thread(con, "消费者2");
+		Thread t4 = new Thread(con, "消费者2");
 		t1.start();
-//		t2.start();
+		t2.start();
 		t3.start();
-//		t4.start();
+		t4.start();
 	}
 }
