@@ -3,7 +3,7 @@
  * @Title: Consumer.java
  * @Package com.wzd.waitnotify
  * @Description: 消费者
- * @author Administrator
+ * @author wangzedong
  * @date 2018年8月26日下午4:04:53
  * @version V1.0  
  */
@@ -13,7 +13,7 @@ package com.wzd.waitnotify;
 /**
  * @ClassName: Consumer
  * @Description: 消费者
- * @author Administrator
+ * @author wangzedong
  * @date 2018年8月26日下午4:04:53
  */
 

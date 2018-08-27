@@ -3,7 +3,7 @@
  * @Title: Producer.java
  * @Package com.wzd.waitnotify
  * @Description: 生产者
- * @author Administrator
+ * @author wangzedong
  * @date 2018年8月26日下午3:51:09
  * @version V1.0  
  */
@@ -13,7 +13,7 @@ package com.wzd.waitnotify;
 /**
  * @ClassName: Producer
  * @Description: 生产者
- * @author Administrator
+ * @author wangzedong
  * @date 2018年8月26日下午3:51:09
  */
 

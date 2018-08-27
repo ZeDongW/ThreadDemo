@@ -1,34 +1,34 @@
 
-    /**  
-     * @Title: DeadLock.java
-     * @Package com.wzd.deadlock
-     * @Description: 简单死锁例子
-     * @author Administrator
-     * @date 2018年8月26日下午3:22:36
-     * @version V1.0  
-     */
-    
+/**  
+ * @Title: DeadLock.java
+ * @Package com.wzd.deadlock
+ * @Description: 简单死锁例子
+ * @author wangzedong
+ * @date 2018年8月26日下午3:22:36
+ * @version V1.0  
+ */
+
 package com.wzd.deadlock;
 
+/**
+ * @ClassName: DeadLock
+ * @Description: 简单死锁例子
+ * @author wangzedong
+ * @date 2018年8月26日下午3:22:36
+ */
 
-    /**
-     * @ClassName: DeadLock
-     * @Description: 简单死锁例子
-     * @author Administrator
-     * @date 2018年8月26日下午3:22:36
-     */
+public class DeadLock implements Runnable {
 
-public class DeadLock implements Runnable{
-	
-	    /* (非 Javadoc)
-	    * 
-	    * 
-	    * @see java.lang.Runnable#run()
-	    */
-	    
+	/*
+	 * (非 Javadoc)
+	 * 
+	 * 
+	 * @see java.lang.Runnable#run()
+	 */
+
 	@Override
 	public void run() {
-		if("A".equals(Thread.currentThread().getName())) {
+		if ("A".equals(Thread.currentThread().getName())) {
 			synchronized ("A") {
 				System.out.println(Thread.currentThread().getName() + "   get A  wait B......");
 				synchronized ("B") {
@@ -44,7 +44,7 @@ public class DeadLock implements Runnable{
 			}
 		}
 	}
-	
+
 	public static void main(String[] args) {
 		DeadLock dl = new DeadLock();
 		Thread t1 = new Thread(dl, "A");

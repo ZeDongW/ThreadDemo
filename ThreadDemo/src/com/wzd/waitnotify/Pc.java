@@ -1,22 +1,21 @@
 
-    /**  
-     * @Title: Pc.java
-     * @Package com.wzd.waitnotify
-     * @Description: 生产者消费者实例
-     * @author Administrator
-     * @date 2018年8月26日下午4:11:06
-     * @version V1.0  
-     */
-    
+/**  
+* @Title: Pc.java
+* @Package com.wzd.waitnotify
+* @Description: 生产者消费者实例
+* @author wangzedong
+* @date 2018年8月26日下午4:11:06
+* @version V1.0  
+*/
+
 package com.wzd.waitnotify;
 
-
-    /**
-     * @ClassName: Pc
-     * @Description: 生产者消费者实例
-     * @author Administrator
-     * @date 2018年8月26日下午4:11:06
-     */
+/**
+ * @ClassName: Pc
+ * @Description: 生产者消费者实例
+ * @author wangzedong
+ * @date 2018年8月26日下午4:11:06
+ */
 
 public class Pc {
 	public static void main(String[] args) {

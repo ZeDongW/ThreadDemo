@@ -3,7 +3,7 @@
  * @Title: WithdrawMoneyByExtends.java
  * @Package com.wzd.exercise
  * @Description: 银行取钱练习
- * @author Administrator
+ * @author wangzedong
  * @date 2018年8月25日下午10:02:18
  * @version V1.0  
  */
@@ -13,7 +13,7 @@ package com.wzd.exercise.withdrawmoney;
 /**
  * @ClassName: WithdrawMoneyByExtends
  * @Description: 银行取钱练习
- * @author Administrator
+ * @author wangzedong
  * @date 2018年8月25日下午10:02:18
  */
 

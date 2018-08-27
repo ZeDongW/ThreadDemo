@@ -3,7 +3,7 @@
  * @Title: Product.java
  * @Package com.wzd.waitnotify
  * @Description: 产品
- * @author Administrator
+ * @author wangzedong
  * @date 2018年8月26日下午3:45:17
  * @version V1.0  
  */
@@ -13,7 +13,7 @@ package com.wzd.waitnotify;
 /**
  * @ClassName: Product
  * @Description: 产品
- * @author Administrator
+ * @author wangzedong
  * @date 2018年8月26日下午3:45:17
  */
 
@@ -93,18 +93,18 @@ public class Product {
 		this.falg = falg;
 	}
 
-	
-	    /* (非 Javadoc)
-	    * 
-	    * 
-	    * @return
-	    * @see java.lang.Object#toString()
-	    */
-	    
+	/*
+	 * (非 Javadoc)
+	 * 
+	 * 
+	 * @return
+	 * 
+	 * @see java.lang.Object#toString()
+	 */
+
 	@Override
 	public String toString() {
 		return "Product [name=" + name + ", price=" + price + "]";
 	}
 
-	
 }

@@ -2,8 +2,8 @@
 /**  
  * @Title: Disembogue.java
  * @Package com.wzd.exercise.pool
- * @Description: 放水
- * @author Administrator
+ * @Description: 放水程序
+ * @author wangzedong
  * @date 2018年8月26日下午11:15:34
  * @version V1.0  
  */
@@ -12,8 +12,8 @@ package com.wzd.exercise.pool;
 
 /**
  * @ClassName: Disembogue
- * @Description: 放水
- * @author Administrator
+ * @Description: 放水程序
+ * @author wangzedong
  * @date 2018年8月26日下午11:15:34
  */
 

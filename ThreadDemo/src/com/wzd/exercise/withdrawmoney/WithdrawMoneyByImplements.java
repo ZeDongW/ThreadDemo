@@ -3,7 +3,7 @@
  * @Title: WithdrawMoneyByImplements.java
  * @Package com.wzd.exercise
  * @Description: 银行取钱练习
- * @author Administrator
+ * @author wangzedong
  * @date 2018年8月25日下午10:19:02
  * @version V1.0  
  */
@@ -16,7 +16,7 @@ import java.nio.CharBuffer;
 /**
  * @ClassName: WithdrawMoneyByImplements
  * @Description: 银行取钱练习
- * @author Administrator
+ * @author wangzedong
  * @date 2018年8月25日下午10:19:02
  */
 

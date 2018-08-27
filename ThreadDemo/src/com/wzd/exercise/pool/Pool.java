@@ -2,8 +2,8 @@
 /**  
  * @Title: Pool.java
  * @Package com.wzd.exercise.pool
- * @Description: TODO(用一句话描述该文件做什么)
- * @author Administrator
+ * @Description: 水池实例
+ * @author wangzedong
  * @date 2018年8月26日下午11:01:46
  * @version V1.0  
  */
@@ -12,8 +12,8 @@ package com.wzd.exercise.pool;
 
 /**
  * @ClassName: Pool
- * @Description: TODO(这里用一句话描述这个类的作用)
- * @author Administrator
+ * @Description: 水池实例
+ * @author wangzedong
  * @date 2018年8月26日下午11:01:46
  */
 

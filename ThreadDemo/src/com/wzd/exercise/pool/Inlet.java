@@ -3,7 +3,7 @@
  * @Title: Inlet.java
  * @Package com.wzd.exercise.pool
  * @Description: 进水程序
- * @author Administrator
+ * @author wangzedong
  * @date 2018年8月26日下午11:04:45
  * @version V1.0  
  */
@@ -13,7 +13,7 @@ package com.wzd.exercise.pool;
 /**
  * @ClassName: Inlet
  * @Description: 进水程序
- * @author Administrator
+ * @author wangzedong
  * @date 2018年8月26日下午11:04:45
  */
 

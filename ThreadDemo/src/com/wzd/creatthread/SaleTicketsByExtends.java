@@ -3,7 +3,7 @@
  * @Title: Saleticket.java
  * @Package com.wzd.creatthread
  * @Description: 继承Thread类自定义线程
- * @author Administrator
+ * @author wangzedong
  * @date 2018年8月25日下午8:25:09
  * @version V1.0  
  */
@@ -13,16 +13,16 @@ package com.wzd.creatthread;
 /**
  * @ClassName: Saleticket
  * @Description: 通过继承Thread类自定义线程
- * @author Administrator
+ * @author wangzedong
  * @date 2018年8月25日下午8:25:09
  */
 
 public class SaleTicketsByExtends extends Thread {
 	// 共享静态变量，票数
 	static int num = 50;
-	
+
 	/**
-	 *  创建一个新的实例 SaleTicketsByExtends.
+	 * 创建一个新的实例 SaleTicketsByExtends.
 	 *
 	 */
 
@@ -52,14 +52,14 @@ public class SaleTicketsByExtends extends Thread {
 			}
 		}
 	}
-	
-	
-	    /* (非 Javadoc)
-	    * 
-	    * 
-	    * @see java.lang.Thread#run()
-	    */
-	 
+
+	/*
+	 * (非 Javadoc)
+	 * 
+	 * 
+	 * @see java.lang.Thread#run()
+	 */
+
 	/**
 	 * 重写run方法
 	 */
@@ -67,7 +67,7 @@ public class SaleTicketsByExtends extends Thread {
 	public void run() {
 		saleTickets();
 	}
-	
+
 	public static void main(String[] args) {
 		SaleTicketsByExtends atbe1 = new SaleTicketsByExtends("窗口1");
 		SaleTicketsByExtends atbe2 = new SaleTicketsByExtends("窗口2");

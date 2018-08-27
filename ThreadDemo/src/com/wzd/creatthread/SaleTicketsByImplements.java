@@ -3,7 +3,7 @@
  * @Title: SaleTicketsByImplements.java
  * @Package com.wzd.creatthread
  * @Description: 实现Runnable接口自定义异常类
- * @author Administrator
+ * @author wangzedong
  * @date 2018年8月25日下午9:24:24
  * @version V1.0  
  */
@@ -13,13 +13,13 @@ package com.wzd.creatthread;
 /**
  * @ClassName: SaleTicketsByImplements
  * @Description: 实现Runnable接口自定义异常类
- * @author Administrator
+ * @author wangzedong
  * @date 2018年8月25日下午9:24:24
  */
 
 public class SaleTicketsByImplements implements Runnable {
 
-	//Runnable 是同一个对象不需要将票数设为静态
+	// Runnable 是同一个对象不需要将票数设为静态
 	// 票数
 	int num = 50;
 
