@@ -18,43 +18,41 @@ package com.wzd.exercise.pool;
  */
 
 public class Inlet implements Runnable {
-	// 共享的蓄水池
-	Pool p;
+    // 共享的蓄水池
+    Pool p;
 
-	/**
-	 * 创建一个新的实例 Inlet.
-	 *
-	 */
+    /**
+     * 创建一个新的实例 Inlet.
+     *
+     */
 
-	public Inlet(Pool p) {
-		this.p = p;
-	}
-	/*
-	 * (非 Javadoc)
-	 * 
-	 * 
-	 * @see java.lang.Runnable#run()
-	 */
+    public Inlet(Pool p) {
+        this.p = p;
+    }
+    /*
+     * (非 Javadoc)
+     * 
+     * 
+     * @see java.lang.Runnable#run()
+     */
 
-	@Override
+ @Override
 	public void run() {
 		while (true) {
-			if (p.getSize() <= (p.MAX_SIZE - 5)) {
-				synchronized (p) {
-					System.out.print("正在加水，当前池水量为：" + p.getSize() + "L");
-					p.setSize(p.getSize() + 5);
-					System.out.println(",加水后池水量为：" + p.getSize() + "L");
-					p.notify();
-				}
-			} else {
-				synchronized (p) {
-					try {
-						p.wait();
-					} catch (InterruptedException e) {
-						e.printStackTrace();
-					}
-				}
-			}
+		    synchronized (p) {
+		        if (p.getSize() <= (p.MAX_SIZE - 5)) {
+         					System.out.print("正在加水，当前池水量为：" + p.getSize() + "L");
+         					p.setSize(p.getSize() + 5);
+         					System.out.println(",加水后池水量为：" + p.getSize() + "L");
+         					p.notify();
+				      } else {
+				          try {
+				            p.wait();
+				          } catch (InterruptedException e) {
+				              e.printStackTrace();
+				          }
+          }
+      }
 		}
 	}
 

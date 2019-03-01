@@ -40,22 +40,20 @@ public class Disembogue implements Runnable {
 	@Override
 	public void run() {
 		while (true) {
-			if (p.getSize() >= 2) {
-				synchronized (p) {
-					System.out.print("正在放水，当前池水量为：" + p.getSize() + "L");
-					p.setSize(p.getSize() - 2);
-					System.out.println(",放水后池水量为：" + p.getSize() + "L");
-					p.notify();
-				}
-			} else {
-				synchronized (p) {
-					try {
-						p.wait();
-					} catch (InterruptedException e) {
-						e.printStackTrace();
-					}
-				}
-			}
+		    synchronized (p) {
+		        if (p.getSize() >= 2) {
+					        System.out.print("正在放水，当前池水量为：" + p.getSize() + "L");
+					        p.setSize(p.getSize() - 2);
+					        System.out.println(",放水后池水量为：" + p.getSize() + "L");
+					        p.notify();
+				    } else {
+				        try {
+				            p.wait();
+				        } catch (InterruptedException e) {
+				            e.printStackTrace();
+				        }
+				    }
+			    }
 		}
 	}
 
